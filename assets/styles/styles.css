@@ -78,6 +78,7 @@ body {
   border: 3px solid red;
   max-width: 1450px;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -167,4 +168,37 @@ input[type="search"] {
   height: 100%;
   border: none;
   background: none;
+}
+
+/* Header */
+.header {
+  border: 3px solid violet;
+  text-align: center;
+  padding: 0 25%;
+  margin-top: 8%;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+.subheadline {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.cta {
+  font-size: 1.5em;
+  color: white;
+}
+
+.cta:hover {
+  text-decoration: underline;
+}
+
+.title,
+.subheadline,
+.cta {
+  font-weight: 100;
 }
