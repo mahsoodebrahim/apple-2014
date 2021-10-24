@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple</title>
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 
 <body>
   <section class="billboard">
     <nav class="apple-header">
       <ul class="global-nav">
-        <li id="gn-apple"><a href="#"></a></li>
+        <li id="gn-apple" role="list"><a href="#"></a></li>
         <li id="gn-store"><a href="#">Store</a></li>
         <li id="gn-mac"><a href="#">Mac</a></li>
         <li id="gn-ipod"><a href="#">iPod</a></li>
@@ -21,11 +22,17 @@
         <li id="gn-ipad"><a href="#">iPad</a></li>
         <li id="gn-itunes"><a href="#">iTunes</a></li>
         <li id="gn-support"><a href="#">Support</a></li>
+        <li>
+          <div class="global-search">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+            <input type="search" name="search" id="search">
+          </div>
+        </li>
       </ul>
-      <div class="global-search">
+      <!-- <div class="global-search">
         <span class="search-icon"><i class="fas fa-search"></i></span>
         <input type="search" name="search" id="search">
-      </div>
+      </div> -->
     </nav>
 
     <header class="header">
@@ -62,8 +69,8 @@
       </div>
     </div>
     <p class="copyright">Copyright &copy; 2014 Apple Inc. All rights reserved. <span class="link">Terms of Use</span>
-      <span class="link last">Privacy Policy</span></p>
-
+      <span class="link last">Privacy Policy</span>
+    </p>
   </footer>
 </body>
 

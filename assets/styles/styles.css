@@ -1,0 +1,170 @@
+/* Box sizing rules  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Universal Styles */
+body {
+  border: 3px solid red;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Billboard Section */
+.billboard {
+  height: 70vh;
+  min-width: 1350px;
+  border: 10px solid blueviolet;
+  background-image: url(/assets/images/your_verse_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+/* Nav */
+.apple-header {
+  padding: 0 15%;
+}
+
+.global-nav {
+  height: 2em;
+  margin-top: 8%;
+  border-radius: 5px;
+  background: linear-gradient(
+    #787878 0%,
+    #717171 50%,
+    #5d5e5d 50%,
+    #757575 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+li[id^="gn"] {
+  flex: 1;
+  min-width: 100px;
+  border-right: 2px solid #4f4f4f;
+}
+
+.global-nav a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.global-nav a:hover {
+  background: #575757;
+}
+
+.global-search {
+  border: 1px solid #4f4f4f;
+  height: 1.2em;
+  width: 100px;
+  margin: 0 1em;
+  background: linear-gradient(
+    #7a7a7a 0%,
+    #808080 50%,
+    #6f6f6f 50%,
+    #757575 100%
+  );
+  border-radius: 25px;
+  padding: 0.05em 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 0.8em;
+  color: white;
+}
+
+input[type="search"] {
+  width: 80px;
+  height: 100%;
+  border: none;
+  background: none;
+}
