@@ -75,7 +75,6 @@ select {
 
 /* Universal Styles */
 body {
-  border: 3px solid red;
   max-width: 1450px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -97,8 +96,8 @@ ul {
 /* Billboard Section */
 .billboard {
   height: 70vh;
+  padding-top: 8%;
   min-width: 1350px;
-  border: 10px solid blueviolet;
   background-image: url(/assets/images/your_verse_hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +111,7 @@ ul {
 
 .global-nav {
   height: 2em;
-  margin-top: 8%;
+  margin-top: 0;
   border-radius: 5px;
   background: linear-gradient(
     #787878 0%,
@@ -172,7 +171,6 @@ input[type="search"] {
 
 /* Header */
 .header {
-  border: 3px solid violet;
   text-align: center;
   padding: 0 25%;
   margin-top: 8%;
@@ -201,4 +199,45 @@ input[type="search"] {
 .subheadline,
 .cta {
   font-weight: 100;
+}
+
+/* Pormos Aside */
+
+.promos {
+  margin-top: 0.2em;
+  display: flex;
+  gap: 0.2em;
+}
+
+[class^="promo"] {
+  flex: 1;
+}
+
+/* Footer */
+
+.footer {
+  padding: 0 15%;
+  margin-top: 1.5em;
+  color: #767676;
+  font-size: 0.7em;
+}
+
+.link,
+.footer a {
+  color: #2499d3;
+}
+
+.wrapper {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  border-right: 1px solid #767676;
+  padding: 0 0.5em;
+}
+
+.footer a:last-child {
+  border: none;
 }
